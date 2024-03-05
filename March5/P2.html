@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript" src="Login.js"></script>        
+    </head>
+<body>
+    <form name="frmLogin" action="javascript:login()">
+        <table border="3" align="center">
+            <tr>
+                <th colspan="2">
+                    Login Page
+                </th>
+            </tr>
+            <tr>
+                <th>User Name</th>
+                <td>
+                    <input type="text" name="userName" autofocus /> 
+                    <span id="errUser" style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input type="password" name="passCode" />
+                    <span id="errPassword" style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="Login" />
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            "use strict"
+            var employs = [
+                {empId : 1, empName : 'Parasu Ram', salary : 90022},
+                {empId : 2, empName : 'Ramesh', salary : 89942},
+                {empId : 3, empName : 'Pallavi', salary : 78662},
+                {empId : 4, empName : 'Satya', salary : 92554},
+                {empId : 5, empName : 'Sravani', salary : 76622},
+            ]
+            function show() {
+                for(var v in employs) {
+                    document.writeln("Employ Id  " +employs[v].empId +
+                       " Employ Name  " +employs[v].empName + 
+                       " Salary  " +employs[v].salary + "<br/>");
+                }
+            }
+        </script>
+    </head>
+<body onload="show()">
+
+</body>
+</html>
