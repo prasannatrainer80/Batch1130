@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function redColor() {
+                document.bgColor = "red";
+            }
+            function blueColor() {
+                document.bgColor = "blue";
+            }
+            function greenColor() {
+                document.bgColor = "green";
+            }
+        </script>
+    </head>
+<body>
+    <input id="b1" type="button" value="Red" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="b2" type="button" value="Blue" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="b3" type="button" value="Green" />
+    <script>
+        document.getElementById("b1").addEventListener("click", redColor);
+        document.getElementById("b2").addEventListener("click", blueColor);
+        document.getElementById("b3").addEventListener("click", greenColor);
+    </script>
+</body>
+</html>
