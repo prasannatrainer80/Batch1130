@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function add() {
+                var newE = document.createElement("li");
+                newE.innerHTML = "Mohammad";
+                var students = document.getElementById("students");
+                students.insertBefore(newE, students.children[1]);
+            }
+        </script>
+    </head>
+<body onload="add()">
+    <ol type="1" id="students">
+        <li>Abhi</li>
+        <li>Baba</li>
+        <li>Chakravarthi</li>
+        <li>Sravani</li>
+        <li>Siva</li>
+        <li>Nandini</li>
+    </ol>
+</body>
+</html>

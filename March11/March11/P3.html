@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function status() {
+                var result = "";
+                if (frmData.chkStatus.checked==true) {
+                    result = "Present...";
+                } else {
+                    result = "Absent...";
+                }
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </head>
+<body>
+    <form name="frmData">
+        <center>
+            Status : 
+        <input id="c1" type="checkbox" name="chkStatus" /> <br/><br/>
+            <span id="result"></span>
+        <script>
+            document.getElementById("c1").addEventListener("change", status);
+        </script>
+        </center>
+    </form>
+</body>
+</html>

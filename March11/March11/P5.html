@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function debugExample() {
+                var firstNo = 5, secondNo = 7;
+                document.writeln("Calculation Program...<br/>");
+                var result = firstNo + secondNo;
+                console.log("Sum  " +result);
+                document.writeln("Sum is  " +result + "<br/>");
+                result = firstNo - secondNo;
+                console.log("Sub  " + result);
+                debugger;
+                document.writeln("Sub is  " +result + "<br/>");
+                result = firstNo * secondNo;
+                console.log("Mult " +result);
+                debugger;
+                document.writeln("Mult is  " +result+ "<br/>");
+            }
+        </script>
+    </head>
+<body onload="debugExample()">
+
+</body>
+</html>

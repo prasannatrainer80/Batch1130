@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function doCheck() {
+                var age = parseInt(frmData.age.value);
+                try {
+                    if (age < 18) {
+                        throw "Not Elligible for Voting...";
+                    } 
+                        document.getElementById("result").innerHTML = 
+                        "You Can Vote".fontcolor("green");
+                
+                } catch(error) {
+                    document.getElementById("result").innerHTML = 
+                        error.fontcolor("red");                    
+                }
+            }
+        </script>
+    </head>
+<body>
+    <form name="frmData" action="javascript:doCheck()">
+        <center>
+            Age : 
+            <input type="number" name="age" /> <br/><br/>
+            <input type="submit" value="Show" /> <br/><br/>
+            <span id="result"></span>
+        </center>
+    </form>
+</body>
+</html>

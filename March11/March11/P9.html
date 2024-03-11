@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function doValid() {
+                var email = frmData.email.value;
+                try {
+                    if (email.indexOf("@")==-1) {
+                        throw "Invalid Email Address...@ missing";
+                    }
+                    document.getElementById("result").innerHTML ="Valid Email...";
+                } catch(error) {
+                    document.getElementById("result").innerHTML = error;
+                }
+            }
+        </script>
+    </head>
+<body>
+    <form name="frmData" action="javascript:doValid()">
+        <center>
+            Email : 
+            <input type="text" name="email" /> <br/><br/>
+            <input type="submit" value="Show" /> <br/><br/>
+            <span id="result"></span>
+        </center>
+    </form>
+</body>
+</html>
