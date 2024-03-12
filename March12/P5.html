@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("input").focus(function() {
+                    $(this).next("span").css("display","inline").fadeOut(2000);
+                })
+            })
+        </script>
+    </head>
+<body>
+    First Name : 
+    <p><input type="text" /> <span>Please Enter First Name</span></p> 
+   Last Name : 
+       <p><input type="text" /> <span>Please Enter Last Name</span></p>
+</body>
+</html>

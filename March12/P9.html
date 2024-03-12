@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript" 
+        src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> 
+        
+    </script>
+        <script>
+            $(document).ready(function() {
+                $("#b1").click(function() {
+                    var firstNo = $("#firstNo").val();
+                    var secondNo = $("#secondNo").val();
+                    var result = firstNo * secondNo;
+                    $("#result").val(result);
+                })         
+            })
+        </script>
+    </head>
+<body>
+    <form name="frmData">
+        <center>
+            First Number : 
+            <input type="number" id="firstNo" name="firstNo" /> <br/><br/>
+            Second Number : 
+            <input type="number" id="secondNo" name="secondNo" /> <br/><br/>
+            Result : 
+            <input type="number" id="result" name="result" /> <br/><br/>
+            <input type="button" id="b1" value="Mult" />
+        </center>
+    </form>
+</body>
+</html>

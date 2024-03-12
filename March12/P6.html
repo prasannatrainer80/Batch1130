@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script type="text/javascript" 
+            src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#b1").click(function() {
+                    // var sname = frmData.sname.value;
+                    var sname = $("#t1").val();
+                    alert("Student Name is " +sname);
+                })
+            })
+        </script>
+
+    </head>
+<body>
+    <form name="frmData">
+        <center>
+            Name : 
+            <input id="t1" type="text" name="sname" /> <br/><br/>
+            <input type="button" id="b1" value="Show" />
+        </center>
+    </form>
+</body>
+</html>
