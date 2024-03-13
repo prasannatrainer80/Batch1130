@@ -1,0 +1,104 @@
+JSP (Java Server Pages) 
+
+What is the main drawback in servlets ???
+
+Servlets contains 2 files as HTML file for static content and Servlet/Java file for dynamic content. 
+
+If you want to write any dynamic code in HTML it is not possible, for example if you want to load all database table names into dropdown, its difficult to make in servlets.  So, the combination of both static and dynamic content not to be placed in a single page, but if you implement both static and dynamic content in the same page that will improve the performance of the given application. So to ensure this we need the help of jsp. 
+
+JSP page after compilation it generates the servlet. It will have all features of servlets. 
+
+Everytime, if you run the servlet we need to restart the server, but in jsp page no need to restart the server, once you refresh the page automatically the content gets updated. 
+
+JSP Execution happens very fast, as the java code will be represented using html tags. So, rendering will be happen very fast. 
+
+JSP page contains both html code and java code, but java code to be enclosed with the tags specified. 
+
+	Instance Persistence
+
+	Session Management
+
+	Security 
+
+Here the question is, how to write java code in JSP page  
+
+Java code contains 
+
+-> Statements, control structures, block of code, variable declarations, expressions etc...
+
+all those we need to write by using jsp, then we need some specific tags. 
+
+We have some specific tags, that which allows you to write java code in jsp page. 
+
+Intrinsic Objects : 
+____________________
+
+   -> request
+
+   -> response
+
+   -> application
+
+   -> session
+ 
+   -> error
+
+   -> out 
+
+
+request and response in servlets we are getting in service() method as
+
+public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+}
+
+Previously we need to create an object to HttpServeltRequest and HttpServletResponse interfaces. 
+
+But in jsp, we can directly call them by using request and response objects, as they are intrinsic objects. 
+
+
+In Servlets, we are displaying values as 
+
+PrintWriter out = response.getWriter();
+out.println()
+
+but in jsp, directly we can print as 
+
+out.println("Hello...");
+
+as out is an intrinsic object. 
+
+What are the jsp tags available 
+
+for writing pure java code, 
+
+<%
+
+%>  -> This is called scriptlet tag which allows you to write pure java code in that. 
+
+<%!
+
+%>  -> This tag allows you for declarations, like variables and objects etc...
+
+<%@ page %> -> This page directive allows you to write any directives in that. 
+
+<%@ page import="java.util.List" %>
+
+<%@ page import="com.java.jsp.Employ" %>
+
+<%= %> : This tag allows you to display any value or obejct infomation.
+
+<%= c%> 
+
+<%= obj.getName() %>
+
+
+
+
+"Akhil"
+"Akhil    "
+
+
+
+
+
