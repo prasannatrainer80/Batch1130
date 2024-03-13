@@ -1,0 +1,16 @@
+.myhotelClass{
+    text-align:center;
+    font-size:300%;
+    color:Red;
+}
+body {
+    /* background-image: url("/images/.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table {
+    background-color: green;
+}
+.buttons {
+    text-align: center;
+}
