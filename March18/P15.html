@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 10px;
+            }
+            .main {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                height: 200px;
+            }
+            .b, .c {
+                flex :0 0 50%;
+                background :green;
+            }
+            .a {
+                flex : 0 0 100%;
+                /* order: 1; */
+                background-color: blue;
+            }
+            .c {
+                background-color: red;
+            }
+        </style>
+    </head>
+<body>
+    <div class="main">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="C">C</div>
+    </div>
+</body>
+</html>

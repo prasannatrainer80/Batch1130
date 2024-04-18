@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <script>
+            var start = 0;
+            function nextView() {
+                var arr = [
+                    "<a href=#>4</a>",
+                    "<a href=#>5</a>",
+                    "<a href=#>6</a>"
+                ]
+                var element = document.createElement("ul");     
+                element.classList.add('pagination');
+                element.classList.add('pagination-lg')
+                for(var i=0;i<3;i++) {
+                    const li = document.createElement("li");
+                    li.innerHTML = arr[i];
+                    element.appendChild(li);
+                }           
+                document.body.appendChild(element);
+            }
+            function page1() {
+                start = 0;
+                dataLoad();
+            }
+            function page2() {
+                start = 6;
+                dataLoad();
+            }
+            function page3() {
+                start = 10;
+                dataLoad();
+            }
+            function dataLoad() {
+                document.getElementById("e1").innerHTML = employs[start].empno;
+                document.getElementById("n1").innerHTML = employs[start].name;
+                document.getElementById("d1").innerHTML = employs[start].dept;
+                document.getElementById("s1").innerHTML = employs[start].salary;
+                start = start+1;
+                document.getElementById("e2").innerHTML = employs[start].empno;
+                document.getElementById("n2").innerHTML = employs[start].name;
+                document.getElementById("d2").innerHTML = employs[start].dept;
+                document.getElementById("s2").innerHTML = employs[start].salary;
+                start = start + 1;
+                document.getElementById("e3").innerHTML = employs[start].empno;
+                document.getElementById("n3").innerHTML = employs[start].name;
+                document.getElementById("d3").innerHTML = employs[start].dept;
+                document.getElementById("s3").innerHTML = employs[start].salary;
+                start = start + 1;
+                document.getElementById("e4").innerHTML = employs[start].empno;
+                document.getElementById("n4").innerHTML = employs[start].name;
+                document.getElementById("d4").innerHTML = employs[start].dept;
+                document.getElementById("s4").innerHTML = employs[start].salary;
+                start = start + 1;
+                document.getElementById("e5").innerHTML = employs[start].empno;
+                document.getElementById("n5").innerHTML = employs[start].name;
+                document.getElementById("d5").innerHTML = employs[start].dept;
+                document.getElementById("s5").innerHTML = employs[start].salary;
+            }
+            var employs = [
+                {empno:1,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:2,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:3,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:4,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:5,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:6,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:7,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:8,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:9,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:10,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:11,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:12,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:13,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:14,name:'BabaSai',dept:'Java',salary:84823},
+                {empno:15,name:'BabaSai',dept:'Java',salary:84823},
+            ]
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+<body onload="dataLoad()">
+    <div class="container">
+      
+       <table border="3" align="center">
+        <tr>
+            <th>Employ No</th>
+            <th>Employ Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td id="e1"></td>
+            <td id="n1"></td>
+            <td id="d1"></td>
+            <td id="s1"></td>
+        </tr>
+        <tr>
+            <td id="e2"></td>
+            <td id="n2"></td>
+            <td id="d2"></td>
+            <td id="s2"></td>
+        </tr>
+        <tr>
+            <td id="e3"></td>
+            <td id="n3"></td>
+            <td id="d3"></td>
+            <td id="s3"></td>
+        </tr>
+        <tr>
+            <td id="e4"></td>
+            <td id="n4"></td>
+            <td id="d4"></td>
+            <td id="s4"></td>
+        </tr>
+        <tr>
+            <td id="e5"></td>
+            <td id="n5"></td>
+            <td id="d5"></td>
+            <td id="s5"></td>
+        </tr>
+       </table>
+        <ul class="pagination pagination-lg">
+            <li><a href="javascript:page1()">1</a> </li>
+            <li><a href="javascript:page2()">2</a> </li>
+            <li><a href="javascript:page3()">3</a> </li>
+            <li><a href="#">...</a> </li>
+            <li><a href="javascript:nextView()">24</a> </li>
+        </ul> <br/><hr/>
+    </div>
+</body>
+</html>
