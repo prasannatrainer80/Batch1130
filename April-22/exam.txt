@@ -1,0 +1,17 @@
+1) Write a program to convert a string into string array when comma(,) operator comes
+
+Example : 
+
+"Babasai, Bhavana, Bhavanya, Suresh, Sudharshan"
+
+above string you please take and if comma(,) operator comes move to string array
+
+2) Write a program to define a string which contains word "sonix" more than 3 times and count how many times that word exists
+
+3) Write a program to take a string as "welcome to sonix java programming...thank you", convert alternate characters into upper case
+
+4) Write a program to Check given string is palindrome or not
+
+5)  Write a Java program to create a class called "Person" with a name and age attribute. Create two instances of the "Person" class, set their attributes using the constructor, and print their name and age.
+
+6)  Write a Java program to create a class called "Book" with attributes for title, author, and ISBN, and methods to add and remove books from a collection.
