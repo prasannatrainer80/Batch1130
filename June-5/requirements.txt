@@ -1,0 +1,24 @@
+
+
+1) Add Stock
+
+2) Search Stock
+
+For AddStock StockId as string to be incremented as S001, S002,S003 ...
+
+3) Place Order
+
+  You need to read stockId and QtyOrdered
+
+validation : qtyOrdered must be less than qtyAvail in stock table. 
+
+if qty avaialble, then calculate billAMount as qtyOrder * price (price is in Stock table)
+
+then add record into Orders table.
+
+In Stock Table update the qty for partcular stock, example if S001 contains 10 items and 4 items are ordered then remaining are 6
+
+4) Search Orders by OrderId
+
+5) Show Orders whose BillAmount > 10000
+
