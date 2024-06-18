@@ -1,0 +1,20 @@
+1) What is OOPs
+
+2) OOPS features
+
+3) JVM Architecture
+
+4) Difference between IS-A and HAS-A Relation (Program Needed)
+
+5) What is Method overloading (Program Needed)
+
+6) What is Constructor and Constructor Overloading
+
+7) What is Abstract Class and Interface
+
+8) What is default methods in interface (Program Needed)
+
+9) What is Clonable interface
+
+10) How to make Immutable classes and java and need program.
+
