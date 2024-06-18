@@ -1,0 +1,29 @@
+Session Management : 
+____________________
+
+In Console/Windows applications, there is no need to take care of sessions, as memory is plentiful available
+and program is running in one corner of memory.  But, if it in web application, the story is different. Many people are accessing the same application at same time, then we need to maintain both client and server state information. This we can ensure with state management. 
+
+We have 2 types of state management as 
+	
+	(i) Client-Side
+
+		Cookies
+
+		QueryString
+
+	(ii) Serve-Side 
+
+		Application
+
+		Session 
+
+
+Sessions are used to store large amount of data and used to pass data 
+across multiple servlets. You can create session, as
+
+HttpSession session = request.getSession(true);
+session.setAttribute(key,value);
+
+
+
