@@ -1,0 +1,232 @@
+Tracing : 
+
+To enable page-level tracing, use the following method :
+
+<%@ Page Trace="True" %>
+
+In this you need to include, TraceMode attribute on the top SortByCategory or SortByTime.
+
+<%@ Page Language="C#" Trace="True" TraceMode="SortByCategory" %>
+
+It access the trace.axd page, which contains he information about the page tracing information. 
+
+1. Request Details : Includes the session ID, the time when the request is made and the request and response encodings, the request type, and the return status. 
+
+2. Trace Information : Includes the output of any Trace.Write or Trace.Warn Statements.
+
+3. Control tree : Displays all hierarchical display of all the server-side controls on the requested page. 
+
+4. Cookies Collection : Includes the cookies accompanying the request.
+
+5. Headers Collection : Includes the headers accompanying the request.
+
+6. Server variables : Includes the server variables and their values at the time of the request.  
+
+State Management :
+
+If you want to implement the state Management, it can be divided into 2 categories :
+
+1. Client-state management
+2. Server-state management 
+
+1. Client-State :  
+
+ViewState Property
+
+Hidden Fields
+
+Cookies
+
+Query strings 
+
+2. Server-State : 
+
+Application State
+
+Session State
+
+Database Support 
+
+1. ViewState : This property of an ASP.NET page enabesl you to retain the page and control specific values. 
+
+The View state of a web page or a control consists of the cumulative property of the page or the control. 
+
+ViewState["any string"]="some value";
+
+To determine the effect of disabling the ViewState property of a control, set the EnableViewState property of the TextBox1 to false. 
+
+Advantages of ViewState :
+
+1. Values in the view state are stored in the standard HTML format as part of the wepage. 
+
+2. ViewState property can be implemented very easily in ASP.NET page, by using EnableViewState property of the web page and server controls.
+
+3. Values in the view state are hashed, compressed and encoded for Unicode specifications. 
+
+__________________________________________
+
+Hidden Field : To enable the use of HTML-standard hidden fields in a web form to store page-specific info. use hidden-field. 
+
+Hidden field stores only single value, in the value property and must be explicitly added to the page.  
+
+To place the HiddenField control, go to HTML tab int he ToolBox and place the hiddenfield on the form.
+
+To enable the hiddenfield, right-click on that and select Run as Server Control 
+
+Advantages of Hidden Field :
+
+1. Hidden field can store page-specific information without accessing any web server or web broser resource.
+
+2. THe hidden field can be easily implemented in ASP.NET web form, you need to add the control on the form.
+
+Limitations : 
+
+1. You can view the info. stored in the hidden field by accessing the source of the web-page.
+2. The hidden field does not support more than a single value field to store the information.
+3. The hidden fields are stored in the page. Therefore, storing large values in hidden form fields can slow down the process of the page. 
+
+Cookies : 
+
+A cookie is used to store small piece of informaton on client machine. 
+
+2 types of cookies 
+
+1. Temporary cookies
+2. Persisent cookies 
+
+Persistent cookies are saved in a text file, in the file system of the client computer. 
+
+Query String : 
+
+www.rediffmail.com
+
+manimala_9
+
+
+www.rediffmail.com/login.aspx?uname=manimala_9
+
+The query string is the part of the request that appears after the (?) character in the URL.  It provides a simple way to pass information from one page to another.  
+
+http://ibm17/batch1_6_2/webform2.aspx?name=srin
+
+http://ibm17/batch1_6_2/webform2.aspx?name=srin
+_______________________________
+
+Server-Side State Management : 
+
+int x;
+Application["x"]=0;
+
+To create the Application State, 
+
+Open Global.asax view code and in the Application_Start write the following code.
+
+If you want to access in the Web form before you need to block the application by using 
+
+Application.Lock();
+
+Application state is easy to use and is consistent with other .NET framework classes.
+
+Storing information in application state involves maintaining only a single copy of the information.
+
+Session State : 
+
+Used to store the session-specific information on the page. 
+
+The scope of the Session state is limited to the current browser session.
+
+Caching :  
+
+Speed is the critical factor that judges the success or failure of any website. The problem of slow access can be solved by using a technique called caching.  
+
+The data can be cached either at the client side or at the server side. 
+
+1. Client : The data is stored in temporary files on the hard disk or in the memory of the client computer. Any subsequent request for the cached data is served directly from the memory or the local hard disk of the client. 
+
+2. Dedicated Server : You can specify dedicated server for caching frequently accessed data to share the cached data among multiple servers. 
+
+Benefits of caching : 
+
+1. Reduces access time.
+
+2. Less bandwidth required 
+
+3. Less load on the server. 
+
+Basically caching can be implemented in 
+
+1. Output Caching
+
+2. Fragment Caching 
+
+In Output Caching, the content of the entire page is cahced. Output caching enables you to cache the entire page so that the page does not require to be created again for each request.  
+
+To implment the outputcaching, you need to specify the @ OutputCache directive or the HttpCachePolicy.  
+
+
+@ OutputCache directive takes the following attributes : 
+
+1.Duration : Used to specify the time after which the cache expires.  
+
+2. Location : Used to specify the locatino where the data needs to be cached.  
+
+VaryByParam : used particularly when the user wants to display different contents on a page depending on the value of the query string parameter. The value for this attribute represents the query string values sent with the GET request or the POST parameters.  
+
+2. Fragment Caching : In this the data from some specific sections of the page can be cached.  This is called fragment caching. It is used in situations where the web page contains dynamic data.  This technique allows you to cache only certain portions of a web page.  
+
+To implement Fragment caching, You need to use, Web User Controls.  
+
+To implement the Fragment Caching, you need to follow these steps. 
+
+1. Open a new project and select the ASP.NET web application.
+
+2. Click on Project -> Add New Item and select the Web User Control.
+
+3. Click on the HTML tab, and write the following code. 
+
+write the code and in the page_load of the control write the code.
+
+Register the component and run the application.
+
+Globalization : 
+
+1. Code Block : Contains the application code or the executable part of an application. This block will remain the same for all locales. 
+
+2. Data Block : Contains all the resources, such as text and images, used by the user interface(UI). This block is locale-specific, and each locale will have one data block.  
+
+The process of making an application ready for international customers is called Internationalization.  It includes 
+
+1. Globalization :
+
+2. Localizablity
+
+3. Localization 
+
+Factors to ensure when designing an international application, 
+
+1. User Interface (UI) : The langauge used to design different UI components, such as menu message box, static-text hoder is not fixed during design phase.
+
+2. Information formats : The formats of different elements, such as currency, number and date are not fixed during the design phase of an application.
+
+By using the CultureInfo class you can implement the Globalization. 
+
+Cultures are 2 types.
+
+1. Neutral Culture : Signifies a culture that is liked only to a language and not to a country. 
+
+2. Specific Culture : Signifies a culture that is linked to both a country and a language. 
+
+Properties of the CultureInfo class are.
+
+1. CurrentCulture -> Returns the instance of the CultureInfo class that represents the culture for the current thread. 
+
+2. CurrentUICulture -> Returns an instance of the CultureInfo class that represents the culture for culture-specific resources.
+
+3. DislayName -> Returns the full name of the culture in the <language-code>-<country/region code> format.
+
+4. EnglishName : Returns the English name of the cultre in the <language-Code>-<Country/Region Code> format.
+
+5. Name : Returns the name of the culture in the <Language code>-<Country/Region Code> format.
+
+6. LCID : Returns the culture identifier for the instance of the CultureInfo class. 
+

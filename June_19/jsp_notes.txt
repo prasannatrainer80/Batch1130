@@ -1,0 +1,103 @@
+JSP (Java Server Pages) 
+
+What is the main drawback in servlets ???
+
+Servlets contains 2 files as HTML file for static content and servlet for dynamic content. 
+
+Changes in one file will have huge impact on another file. 
+
+Everytime, we need to restart the server to get the updates. 
+
+Then there is problem as the combination of both static and dynamic content to be placed in same file
+will improve the performance of the application. 
+
+Example : If i want to load all employee names n dropdown, as html don't contains any server side code, 
+as its tedious to do in servlets. 
+
+So, this kind of problem we need to overcome, then we need the help of jsp. 
+
+Jsp file after compilation it generates servlet. 
+
+Jsp File have all capabilities that servlet will do like instance persistenance, session management, 
+redirecting page, cookies, querystring etc...
+
+The advantage is JSP file contains both java code and html code together. 
+
+Please apply routing for yesterday 2 components and show me
+
+<%-- Welcome to JSP --%>
+
+For comments we need to use as <%-- --%>
+
+In between whatever you type can be treated as comment. 
+
+Declarations : As you need to declare any variables or create an object etc...
+
+<%! %>
+
+This tag used to for declarations as
+
+<%!
+   int a;
+   double b;
+   String str;
+%>
+
+Imports : Used to add existing classes or system directives. 
+
+<%@ import %>
+
+example : 
+
+<%@ import java.util.List %>
+
+How to write actual JSP code 
+
+<%
+
+%>
+
+The above tags are known as scriptlets, means any kind of java code to be written in scriplets only. 
+
+<%
+   a= 5;
+   b = 7;
+   c = a+b;
+   d = (9%c)/5+32;
+%>
+
+Expressions : Means any existing values to be printed, then we need expression tags as
+
+<%= %>
+
+Example : 
+
+<%
+   Date obj = new Date();
+%>
+
+Time : 
+
+<%=obj.getHours() %> : <%=obj.getMinutes() %> : <%=obj.getSeconds() %>
+
+@Override
+public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+...
+...
+}
+
+In Jsp, we have intrisic objects 
+
+request	-> Contains all information about the request page
+
+response -> Contains global information about the response specific data.
+
+application  -> APplication oriented data to be stored
+
+session	-> During multiple requests need to maintain request specific data
+
+out -> Used to print any value on the web page. 
+
+
+
+
