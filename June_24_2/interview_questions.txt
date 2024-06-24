@@ -1,0 +1,24 @@
+1) What is Lambda Expression
+
+2) Implement programs using Lambda Expression
+
+3) What is Streams and implement filter, sort, max, min, nullablbe,sum,average,count using Streams with examples
+
+4) Explain in detail about Nulltable type
+
+5) What is method references 
+
+6) Foreach method with examples
+
+7) Explain about datetime api in java8 features
+
+8) What is Multi-threading
+
+9) Explain about synchronization in detail
+
+10) Explain about Calendar class with examples
+
+11) Write a code to convert string to sql date, and find diff. between two dates in terms of days
+
+12) Write a Program to display map interface data using foreach loop.
+
