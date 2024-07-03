@@ -1,0 +1,32 @@
+Doctor(DoctorId, DoctorName, Specialiaztion, Qualification,AvailableSlot)
+
+DoctorId must be primary key and Start with as 'D0001'
+
+Qualification search in internet and give
+
+AvailableSlot must be as 'General','Morning','Evening','Weekends','CallOn'
+
+
+1) Implement Operations as 
+
+AddDoctor
+ShowDoctors
+ShowGeneralShiftDoctors
+ShowCallOnDoctors
+
+drop database if exists hospitaldb;
+
+create database hospitaldb;
+
+use hospitaldb;
+
+create table Doctor
+(
+     DoctorId varchar(30) Primary Key,
+     DoctorName varchar(100) NOT NULL,
+     Specialization varchar(100),
+     Qualification varchar(50),
+     AvailableSlot ENUM('GENERAL','MORNING','EVENING','WEEKENDS','CALLON')
+);
+
+
