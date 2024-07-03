@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>  
+<!DOCTYPE taglib  
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"  
+    "http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">  
+<taglib>  
+  <tlib-version>1.0</tlib-version>  
+  <jsp-version>1.2</jsp-version>  
+  <short-name>test</short-name>  
+  <uri>http://tomcat.apache.org/example-taglib</uri>  
+ <tag>
+ 	<name>hello</name>
+ 	<tag-class>com.java.custom.HelloWorld</tag-class>
+ </tag>
+ <tag>
+ 	<name>ramesh</name>
+ 	<tag-class>com.java.custom.RameshTag</tag-class>
+ </tag>
+ <tag>
+ 	<name>simha</name>
+ 	<tag-class>com.java.custom.SimhaTag</tag-class>
+ </tag>
+ <tag>
+ 	<name>break</name>
+ 	<tag-class>com.java.custom.BreakTag</tag-class>
+ </tag>
+ <tag>
+ 	<name>date</name>
+ 	<tag-class>com.java.custom.DateTag</tag-class>
+ </tag>
+ <tag>
+ 	<name>employshow</name>
+ 	<tag-class>com.java.custom.DatabaseHandler</tag-class>
+ </tag>
+ <tag>
+	<name>employsearch</name>
+	<tag-class>com.java.custom.DatabaseHandler2</tag-class>
+	<body-content>scriptless</body-content>
+</tag> 
+ <tag>
+	<name>employinsert</name>
+	<tag-class>com.java.custom.DatabaseHandler3</tag-class>
+	<body-content>scriptless</body-content>
+</tag> 
+ <tag>
+	<name>show</name>
+	<tag-class>com.java.custom.BodyTagEx1</tag-class>
+	<body-content>scriptless</body-content>
+</tag>
+ <tag>
+	<name>repeat</name>
+	<tag-class>com.java.custom.BodyTag</tag-class>
+	<body-content>scriptless</body-content>
+</tag>
+<tag>
+	<name>upper</name>
+	<tag-class>com.java.custom.UpperCaseTag</tag-class>
+	<body-content>scriptless</body-content>
+</tag>
+<tag>
+	<name>split</name>
+	<tag-class>com.java.custom.SplitTag</tag-class>
+	<body-content>scriptless</body-content>
+</tag>
+</taglib>
