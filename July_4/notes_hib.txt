@@ -1,0 +1,62 @@
+Hibernate : It is a java framework, that whichi simplifies the development of java application to interact with the database. It is an open source, lightweight, ORM (Object Relational Mapping) tool, hibernate implements the specifications of JPA (Java Api for Persistance)
+
+ORM is a tool, that which simplifies the data creation, manipulation and data access.  It is programming technique that maps the object
+to the data stored in database. 
+
+Previously the java application directly interacting with database, but now
+we have various layers between as
+
+1) Java Application
+2) Object
+3) ORM
+4) Database 
+
+What is JPA ?
+
+It provides functionality and standard to ORM tools, 
+
+	-> Open Source
+
+	-> Fast Performance
+
+	-> Database Independent Query
+
+	-> Automatic Table Creation
+
+Hibernate Architecture contains many objects such as 
+
+SessionFactory  : It is a factory of session, that which contains second level cache data 
+which is known as optional data.  Which kind of data it will store is DataBase Connection string
+information. 
+
+But, sessionFactory gets data automatically from hibernate.cfg.xml file, which contains entire connectionstring information. 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sonixpractice</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <mapping class="com.java.hib.Employ"/>
+        <mapping class="com.java.hib.Users"/>
+    </session-factory>
+</hibernate-configuration>
+
+
+The above one is the sample hibernate.cfg.xml file content. 
+
+dialect acts as a glue between hibernate application and database, ensures the database table records needs to be converted into front end class objects. 
+
+Session : Provides an interface between the application and data stored in the database.  It is a short-lived object that wraps the jdbc connection, 
+it holds first level cache information (mandatory) data, provides methods to insert, update and delete the object. 
+
+Transaction : Which allows you to perform any dml operations, and commits the changes from front-end to backend. 
+
+Query : Allows you to get data from POJO classes, these POJO classes directly mapped to the database tables. 
+
