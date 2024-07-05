@@ -1,0 +1,61 @@
+Doctor(DoctorId, DoctorName, Specialiaztion, Qualification,AvailableSlot)
+
+DoctorId must be primary key and Start with as 'D0001'
+
+Qualification search in internet and give
+
+AvailableSlot must be as 'General','Morning','Evening','Weekends','CallOn'
+
+
+1) Implement Operations as 
+
+AddDoctor
+ShowDoctors
+
+
+drop database if exists hospitaldb;
+
+create database hospitaldb;
+
+use hospitaldb;
+
+create table Doctor
+(
+     DoctorId varchar(30) Primary Key,
+     DoctorName varchar(100) NOT NULL,
+     Specialization varchar(100),
+     Qualification varchar(50),
+     AvailableSlot ENUM('GENERAL','MORNING','EVENING','WEEKENDS','CALLON')
+);
+
+
+Create Table Hospital
+(
+    HospitalID INT Primary Key AUTO_INCREMENT,
+    HospitalName varchar(30),
+    City varchar(30),
+    HospitalType varchar(30),
+    Email varchar(30),
+    PhoneNo varchar(30),
+    status Varchar(30) DEFAULT 'ACTIVE'
+);
+
+Create Table Admin
+(
+     AdminId INT Primary Key AUTO_INCREMENT,
+     HospitalId INT References Hospital(HospitalID),
+     UserName varchar(30),
+     Passcode varchar(100),
+     Otp varchar(30),
+     OtpPurpose varchar(30),
+     Status varchar(30) DEFAULT 'ACTIVE'
+);
+
+1) Add Hospital
+2) Show Hospital
+3) Add Admin
+
+For addAdmin for 1 hospital ensure
+only 3 accounts will be added
+
+
