@@ -1,0 +1,35 @@
+Create Table Hospital
+(
+   HospitalId varchar(30) Primary Key,
+   HospitalName varchar(30),
+   City varchar(30),
+   StreetName varchar(30),
+   ZipCode varchar(30),
+   email varchar(30),
+   PhoneNo varchar(30)
+);
+
+Create Table Hospital_Doctor
+(
+    HdId INT Primary Key Auto_INCREMENT,
+    DoctorID INT REFERENCES DOCTOR(DOctor_ID),
+    HospitalID varchar(30) REFERENCES Hospital(HospitalID)
+);
+
+
+Implement Operations as
+
+1) Add Hospital 
+2) Show Hospital
+3) ShowByHospitalId
+4) ShowByHospitalCity
+
+
+In Hospital_Doctor
+
+1) Perform Add Operation, but ensure if one doctor registered in One Hospital for one shift, he is not added to 
+another hospital of Same Shift, Example : Doctor Sai registered for Apollo for Day Shift, so again any hospital he is
+not registered for Day-Shift, No restrictions for Call On Doctors. 
+
+1) Show In Particular Hospital all Kidney treatment doctors/Heart Treatment doctors/General Doctors
+
