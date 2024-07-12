@@ -1,0 +1,21 @@
+use doctordb;
+create table Appointment
+(
+    appointmentId int primary key auto_increment,
+    patientName varchar(30),
+    PatientEmail varchar(30),
+    PatientMobile varchar(30),
+    DoctorName varchar(30),
+    AppointmentDate Date,
+    AppointTime varchar(10),
+    PatientDisease varchar(30)   
+)
+
+Please Implement AddAppointment,ShowAppointment
+
+Conditions : AppointTime must be enter as (08:00 like) 
+	it must not be between (22:00 to 06:00) 
+       If one appointment booked on particular day again the same not to be
+booked example : July 12th 10:30 appointment with Doctor Sai booked again
+	same not to be repeated
+
