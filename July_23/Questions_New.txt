@@ -1,0 +1,100 @@
+1) What is Object Oriented Programming
+
+2) Explain oops features
+
+3) What is class
+
+4) JVM Architecture
+
+5) What is class loader
+
+6) What are various types of data types in java
+
+7) What is difference between STACK and HEAP
+
+8) Explain about Arrays concept in detail
+
+9) What is boxing and unboxing
+
+10) What is top level class in java
+
+11) What is default package in java
+
+12) Explain various methods about object class
+
+13) What is static variable
+
+14) What is constructor, types of constructors
+
+15) What is method overloading
+
+16) What is static block
+
+17) What is inheritance
+
+18) Explain about super keyword
+
+19) What is abstract class and interface
+
+20) Difference between interface and abstract class
+
+21) What is default methods in java
+
+22) Can interface have variables 
+
+23) What is exception handling
+
+24) What is diff. between checked and unchecked exceptions
+
+25) Explain about collections (LIST, Set and SortedSet) interfaces
+
+26) What is diff. between TreeSet and HashSet
+
+27) How to Sort user defined classes
+
+28) What is difference between comparator and comparable
+
+29) Write the code to delete duplicate objects from HashSet
+
+30) What is Map interface
+
+31) Difference between HashTable and HashMap
+
+32) Explain about Generics in detail
+
+33) What is lambda expression
+
+34) What is Optional Class
+
+35) What is method references
+
+36) Explain about streams in detail
+
+37) What is Predicate and Consumer
+
+38) What is difference between Predicate and Function
+
+39) Write the code to display max,min,avg, sum using Streams
+
+40) Explain more about Optional class with objects 
+
+41) What is Garbage collection
+
+42) Create user-defined function delegate to display string in upper case
+
+43) Explain about Thread Priorities
+
+44) What is Functional interface
+
+45) Streams example to display filtered data
+
+46) Thread Life Cycle
+
+47) What is synchronization
+
+48) Explain abut BiPredicate in detail
+
+49) What is diff. between eager loading (vs) lazy loading
+
+50) Explain purpose of instanceof operator
+
