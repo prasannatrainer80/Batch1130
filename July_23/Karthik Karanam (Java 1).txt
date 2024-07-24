@@ -1,0 +1,89 @@
+Karthik Karanam (Java 1)
+________________
+
+1) HTML CSS BootStrap JavaScript (7)
+
+2) Core Java (9/10) ------------
+
+__________________________________________________________________________________
+
+Meghana (0) (Java 2)
+
+HTML, CSS, Java  -----------
+
+___________________________________________________________________________________
+
+
+Ganesh (0) (Java 2)
+
+__________________________________________________________________
+
+Likhith (Java 2) (0)
+
+Core Java 
+
+____________________________________________________________________________________
+
+Naveen K (3 theory)
+(5 practical but if new scenario he is not able to decode)
+
+Allocated PIP for 2 months and need to monitor
+________________________________________________________________________________________
+
+Manohar (no response)
+
+______________________________________________________________________________________________
+
+Ramanjaneyulu (Self rating 5)
+
+Checking answers in internet
+
+Java (0)
+
+____________________________________________________________________________________________________
+
+Satish G (Self Rating 5)
+
+Angular (3)
+
+Java (0)
+
+PIP for 2 months as in that need to monitor
+__________________________________________________________________________________________________
+
+Manohar 
+
+Java (0)
+
+PIP for 2 months as in that need to monitor
+
+___________________________________________________________________________________________________________
+
+Tarak 
+
+Angular Databinding 
+
+Two Way Binding 
+
+Explain about Routing 
+
+<router-outlet></router-outlet>
+
+Explain about Services in Detail
+
+What is interface and abstract class
+
+What is Constructor
+
+Name some list of collections in java
+
+Angular (6)
+
+Java (5) Code Bloat in generics
+
+TreeSet collection
+
+HashSet Collection
+
+
+

@@ -1,0 +1,55 @@
+1) 
+select dept,sum(salary) from emp group by dept order by dept;
+
+2) 
+
+write a query to retrieve all the employee records such that in each department display the records in ranking wise of employees based on their salary in descending order.
+
+select EmpId, Name,Age, Salary,dept_id,rank() Over(partition by dept_id order by salary desc) id from Employ
+
+
+
+
+____________________________________________________________________________________
+
+Write Spring code to accept your name and display message as
+
+Good Morning...!{Name}
+How are You...!{Name}
+How i Help You...!{Name}
+Have Nice Day...!{Name}
+
+Then if you give name as Rajesh, then
+
+Good Morning...!Rajesh
+How are You...!Rajesh
+How i Help You...!Rajesh
+Have Nice Day...!Rajesh
+
+____________________________________________________________________________________________________
+
+Bean Scopes : 
+______________
+
+Spring Framework supports five scopes as 
+
+(i) SingleTon  -> This is the default bean scope definition ensures only one object will be created for entire 			application. 
+
+(ii) Prototype -> This scopes a single bean definition to have any number of instances. 
+
+(iii) request -> For every one http request one object to be created. 
+
+(iv) session -> This scopes the bean definition to an HTTP session, 
+
+(v) global-session : 
+_______________________________________________________________________________________________
+
+Write a program to display single greeting message as accept in your name and
+if time between 6 to 12 then good morning 
+if time between 12 to 16 then good afternoon
+if time between 16 to 22 then good evening
+else good night 
+
+
+
+
