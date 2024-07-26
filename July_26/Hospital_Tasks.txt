@@ -1,0 +1,61 @@
+Hospital
+Doctor
+Admin
+Patient
+Appointment 
+
+-> Cancel Appointment (validation Before Appointment Time) if it crosses 5 mins automatically gets cancelled
+
+-> Show all Appointment Status
+
+-> Show All cancelled Appointments 
+
+-> Show Cancelled Appointments w.r.t. Particular Doctor
+
+ConsultionBilling :
+_________
+
+ConsultionId
+AppointmentId
+PatientId 
+Status (Visit/Admit)
+FeeAmount
+BillingDate
+PaymentStatus(PENDING/PAID)
+Comments
+
+RoomDetails
+____________
+RoomID
+RoomType(THREE/TWO/DELUX/SUITE)
+RoomFare
+RoomStatus(OCCUPIED/VACANT)
+
+AdmitDetails
+_____________
+
+AdminId
+RoomID
+PatientID
+AppointmentId
+StartDate
+EndDate
+NoOfDays
+BillingAmount
+Status
+
+------------------------------------------------------
+
+ShowPatientConsultingDetails
+ShowConsultingDetails of Particular Date
+AddConsultingDetails
+SearchConsultingDetails
+ShowConsulting Details whose payment is PENDING
+______________________________________________________________
+
+AddRoom
+ShowRoom
+SearchRoom (By Id/THREE/TWO/DELUX/SUITE)
+ShowAvailableRooms
+__________________________________________________________________
+
