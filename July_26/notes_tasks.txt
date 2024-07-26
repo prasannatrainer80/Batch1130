@@ -1,0 +1,151 @@
+
+
+
+Spring Boot Integration with Angular 
+
+IN Spring Boot first implemented one mini project kind of Swiggy related. 
+
+It contains various modules as
+
+
+1) Customer
+2) Menu
+3) Wallet
+4) Vendor
+5) Orders
+
+
+
+Spring MVC 
+____________
+
+In traditional applications, we have 3 layers 
+
+User Services  Business Services Data Services
+
+
+In this above scenario changes in one layer will have huge impact on another layer. 
+
+So, if you want to make any application as 
+
+loosely coupled and tightly integrated 
+
+w.r.t. TDD environment (Test Driven Development)
+
+Then the best model is MVC 
+
+Model -> Contains core business logic. 
+
+View -> It is a standard ui page... which contains user input, error pages, result pages...
+
+Controller -> It acts as a glue between model and view.  As it contains basic action name, based on action name controller will be mapped or redirected to corresponding target page.
+
+To achieve this in MVC, we have various annotation 
+
+@Controller, 
+
+any class that which is having annotation as @Controller used to write any action redirection code to that. 
+
+@MvcConfiguration : this file contains all the configuration information about the particular project, as where to palce view files and any dependencies to be injected. 
+
+You can specify mapping for the particular action by using @GetMapping or @RequestMapping 
+
+@GetMapping("/")  => It acts as a default mapping to be redirected. 
+
+@GetMapping("/login") -> in this method to which page we need to redirect in that we have to specify.
+
+Running of the MVC Application :
+________________________________
+
+1) Once you run any MVC application, first it checks all the configuration info from @MvcConfiguration file and then it redirects to the default mapping file. 
+
+This job internally specified by component called FrontController 
+
+2) Then once you click on any url, then the from controller checks for respective controller w.r.t. component specified 
+
+after that it would be redirected to the target page. 
+
+
+_________________________________________________________________________________________________________________
+
+Angular is all about components, as any kind of business logic to be implemented, we need to specify in components only. 
+
+As once you create any angular project first by default app component will be created. If you want to create any own components then we need 
+
+ng g c component_name 
+
+Once the command executes, it creates 4 files as 
+
+component.ts
+component.html
+component.spec.ts
+component.css
+
+the component.ts file is heart, where it has
+
+@Component declaration and contains 
+tag as selector as
+
+selector='app-first'
+
+Then after the writing business logic in this, write relevant code in HTML also, then 
+
+to run this code, first step copy the selector 
+
+and this select to be added to target component in HTML format.
+
+<app-first> </app-first>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
