@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="beanMorning" class="com.java.spr.JoinImpl">
+		<property name="greeting" value="Good Morning..."/>
+		<property name="laptopStatus" value="Laptop Ready you can collect..." />
+		<property name="idcardStatus" value="Id card You can collect..." />
+	</bean>
+	<bean id="beanAfternoon" class="com.java.spr.JoinImpl">
+		<property name="greeting" value="Good Afternoon..."/>
+		<property name="laptopStatus" value="Laptop Ready But you are late today...May not be Possible..." />
+		<property name="idcardStatus" value="Id card person may or may not available not sure..." />
+	</bean>
+	<bean id="beanEvening" class="com.java.spr.JoinImpl">
+		<property name="greeting" value="Good Evening..."/>
+		<property name="laptopStatus" value="Laptop Issue not possible today as you came late..." />
+		<property name="idcardStatus" value="Id card Not issued today...As its already running late..." />
+	</bean>
+	
+</beans>

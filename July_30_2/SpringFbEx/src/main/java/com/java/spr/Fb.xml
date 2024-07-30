@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="beanVeni" class="com.java.spr.FeedbackImpl">
+		<property name="sqlFb" value="Can write Commands..." />
+		<property name="uiFb" value="Need to design more..."/>
+		<property name="genFb" value="Need to check with Co-ordinator..." />
+	</bean>
+	<bean id="beanSudharshan" class="com.java.spr.FeedbackImpl">
+		<property name="sqlFb" value="Can write Basic and Advanced Commands..." />
+		<property name="uiFb" value="Crystal Clear Desiner..."/>
+		<property name="genFb" value="Need to check with Co-ordinator..." />
+	</bean>
+	<bean id="beanSiva" class="com.java.spr.FeedbackImpl">
+		<property name="sqlFb" value="Forgot Password..." />
+		<property name="uiFb" value="Need to work More..."/>
+		<property name="genFb" value="Need to check with Co-ordinator..." />
+	</bean>
+	
+</beans>
