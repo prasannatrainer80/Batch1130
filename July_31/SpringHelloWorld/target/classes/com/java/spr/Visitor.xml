@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="beanVisitor" class="com.java.spr.VisitorAmbiance">
+		<property name="greet" value="Good Morning Mr/Ms/Mrs..." />
+		<property name="place" value="Please Wait in C4 Cabin..." />
+		<property name="snacks" value="French Fries..."/>
+		<property name="info" value="20 mins" />
+	</bean>
+</beans>

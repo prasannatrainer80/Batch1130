@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="product1" class="com.java.spr.Product">
+		<property name="productName" value="Laptop" />
+		<property name="quantityAvail" value="20" />
+		<property name="price" value="56000" />
+	</bean>
+	<bean id="product2" class="com.java.spr.Product">
+		<property name="productName" value="Mobiles" />
+		<property name="quantityAvail" value="10" />
+		<property name="price" value="80000" />
+	</bean>
+	<bean id="order1" class="com.java.spr.Order">
+		<property name="orderId" value="1" />
+		<property name="qtyOrd" value="10" />
+		<property name="product" ref="product1" />
+	</bean>
+	<bean id="order2" class="com.java.spr.Order">
+		<property name="orderId" value="2" />
+		<property name="qtyOrd" value="7" />
+		<property name="product" ref="product2" />
+	</bean>
+	<bean id="order3" class="com.java.spr.Order">
+		<property name="orderId" value="3" />
+		<property name="qtyOrd" value="17" />
+		<property name="product" ref="product2" />
+	</bean>	
+	<bean id="orderLogic" class="com.java.spr.OrderLogic">
+		<property name="items">
+			<list>
+				<ref bean="order1" />
+				<ref bean="order2" />
+				<ref bean="order3" />
+			</list>
+		</property>
+	</bean>
+</beans>
